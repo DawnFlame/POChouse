@@ -4,9 +4,11 @@
 
 ![webray](webray.png)
 
-# 提交规则
+## 提交规则
 
 根据目录分类提交相关POC&EXP即可，格式参考已存在的POC
+
+实用为主，写明使用方法即可
 
 > 注意先pull，再push
 
@@ -16,3 +18,12 @@ git add .
 git commit -m "添加xxx漏洞POC"
 git push
 ```
+
+## 数据参考&同步跟踪
+
+**[VULHUB](https://vulhub.org/#/environments/)**
+
+**[狼组POC文库](https://poc.wgpsec.org/)**
+
+**[Middleware-Vulnerability-detection](https://github.com/mai-lang-chai/Middleware-Vulnerability-detection)**
+
