@@ -14,9 +14,5 @@
 
 **[nuclei](https://github.com/projectdiscovery/nuclei-templates)**
 
-**[vulmap](https://github.com/zhzyker/vulmap)**
-
 **[fscan](https://github.com/shadow1ng/fscan)**
-
-**Goby**
 
