@@ -4,6 +4,32 @@
 
 ![banner](banner.png)
 
+## 收录范围
+
+按照优先级排序
+
+```
+HVV：收录各种高危可Getshell的漏洞
+
+渗透测试&SRC：不能直接Getshell的中高危漏洞
+```
+
+POC
+
+```http
+nuclei
+Goby
+脚本：Python || Java （数据来源Github、自编写）
+```
+
+EXP
+
+```http
+Metasploit
+Exploit-DB
+脚本：Python || Java （数据来源Github、自编写）
+```
+
 ## 数据参考
 
 **[VULHUB](https://vulhub.org/#/environments/)**
