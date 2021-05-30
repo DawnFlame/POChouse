@@ -25,15 +25,16 @@ Metasploit
 脚本：Python || Java （数据来源Github、自编写）
 ```
 
-## 数据参考
+## 类似优秀项目
 
 **[VULHUB](https://vulhub.org/#/environments/)**
 
-**[狼组POC文库](https://poc.wgpsec.org/)**
+**[佩奇文库](https://github.com/PeiQi0/PeiQi-WIKI-POC)**
+
+**[Vulmap](https://github.com/zhzyker/vulmap)**
 
 **[Middleware-Vulnerability-detection](https://github.com/mai-lang-chai/Middleware-Vulnerability-detection)**
 
 **[nuclei](https://github.com/projectdiscovery/nuclei-templates)**
 
 **[fscan](https://github.com/shadow1ng/fscan)**
-

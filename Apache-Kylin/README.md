@@ -1,13 +1,30 @@
 ## 应用简介
 
+![](kylin_logo.png)
 
+Apache Kylin是一个开源的分布式分析引擎，提供Hadoop之上的SQL查询接口及多维分析（OLAP）能力以支持超大规模数据，最初由eBay Inc. 开发并贡献至开源社区。它能在亚秒内查询巨大的Hive表。
+
+官方网站：http://kylin.apache.org/cn
+
+默认账户：admin/KYLIN
+
+## 影响范围
+
+FOFA
+
+```http
+app="APACHE-kylin"
+body="kfkSchema"
+```
+
+## 环境搭建
+
+[用 Docker 运行 Kylin](http://kylin.apache.org/cn/docs/install/kylin_docker.html)
 
 ## 相关漏洞
 
-### [Apache Kylin Console 控制台弱口令](https://poc.wgpsec.org/PeiQi_Wiki/Web%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%BC%8F%E6%B4%9E/Apache/Apache%20Kylin/Apache%20Kylin%20Console%20%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%BC%B1%E5%8F%A3%E4%BB%A4.html)
+Apache Kylin的未授权配置泄露 CVE-2020-13937
 
-### [Apache Kylin的未授权配置泄露 CVE-2020-13937](https://poc.wgpsec.org/PeiQi_Wiki/Web%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%BC%8F%E6%B4%9E/Apache/Apache%20Kylin/Apache%20Kylin%20%E6%9C%AA%E6%8E%88%E6%9D%83%E9%85%8D%E7%BD%AE%E6%B3%84%E9%9C%B2%20CVE-2020-13937.html)
-
-### [Apache Kylin 命令注入漏洞 CVE-2020-1956](https://poc.wgpsec.org/PeiQi_Wiki/Web%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%BC%8F%E6%B4%9E/Apache/Apache%20Kylin/Apache%20Kylin%20%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E%20CVE-2020-1956.html)
-
-### [Apache Kylin 命令注入漏洞 CVE-2020-13925](https://poc.wgpsec.org/PeiQi_Wiki/Web%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%BC%8F%E6%B4%9E/Apache/Apache%20Kylin/Apache%20Kylin%20%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E%20CVE-2020-13925.html)
+```
+http://xxx.xxx.xxx.xxx/kylin/api/admin/config
+```
