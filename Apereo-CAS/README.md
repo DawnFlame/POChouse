@@ -1,6 +1,10 @@
 ## 应用简介
 
- Apereo CAS是一个开源的企业级单点登录系统
+![](logo.png)
+
+Apereo CAS是一个开源的企业级单点登录系统
+
+Github：https://github.com/apereo/cas
 
  * 一个开放且有据可查的协议
  * 开源Java服务器组件
@@ -10,3 +14,15 @@
  * 与uPortal，BlueSocket，TikiWiki，Mule，Liferay，Moodle等集成
  * 社区文档和实施支持
  * 广泛的采用者社区
+
+## 相关资产
+
+FOFA
+
+```http
+app="apereo-CAS"
+```
+
+## 环境搭建
+
+[VulnRange](https://github.com/wgpsec/VulnRange)可一键开启此环境

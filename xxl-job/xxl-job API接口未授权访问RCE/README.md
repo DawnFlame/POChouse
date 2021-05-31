@@ -8,37 +8,10 @@
 XXL-JOB <= 2.2.0
 ```
 
-## POC_资产探测
+## POC
 
 ```
-POST /run HTTP/1.1
-Host: 127.0.0.1:9999
-Accept: */*
-X-Requested-With: XMLHttpRequest
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36
-Accept-Encoding: gzip, deflate
-Accept-Language: zh-CN,zh;q=0.9
-Connection: close
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 0
-```
-```
-HTTP/1.1 200 OK
-content-type: text/html;charset=UTF-8
-content-length: 646
-
-{
-  "code": 500,
-  "msg": "request error:java.lang.NullPointerException
-	at com.xxl.job.core.biz.impl.ExecutorBizImpl.run(ExecutorBizImpl.java:49)
-	at com.xxl.job.core.server.EmbedServer$EmbedHttpServerHandler.process(EmbedServer.java:201)
-	at com.xxl.job.core.server.EmbedServer$EmbedHttpServerHandler.access$200(EmbedServer.java:138)
-	at com.xxl.job.core.server.EmbedServer$EmbedHttpServerHandler$1.run(EmbedServer.java:166)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-"
-}
+Goby
 ```
 ## EXP
 

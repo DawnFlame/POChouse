@@ -41,10 +41,8 @@ username=test&password=test&lt=LT-2-gs2epe7hUYofoq0gI21Cf6WZqMiJyj-cas01.example
 
 ## EXP
 
-```bash
-cas_exploit-1.0-SNAPSHOT-all.jar
-```
+两个都是图形化工具
 
-## 参考链接
+**EXP1**：cas_exploit-1.0-SNAPSHOT-all.jar
 
-暂无
+**EXP2**：[@nice0e3](https://github.com/nice0e3/Cas_Exploit)
