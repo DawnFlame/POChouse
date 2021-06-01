@@ -38,3 +38,18 @@ Metasploit
 **[nuclei](https://github.com/projectdiscovery/nuclei-templates)**
 
 **[fscan](https://github.com/shadow1ng/fscan)**
+
+## ToDo
+
+漏洞分析并优化利用方式和工具
+
+```http
+Apache-Shiro
+Apache-Struts2
+Fastjson
+Spring
+Weblogic
+各种OA
+网络设备&（默认口令）
+```
+

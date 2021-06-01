@@ -1,1 +1,0 @@
-https://vulhub.org/#/environments/hadoop/unauthorized-yarn/
