@@ -15,17 +15,18 @@ POC（支持批量验证）
 ```http
 nuclei-集成于大宝剑内
 Goby
-脚本：Python || Java （数据来源Github、自编写）
+Python（数据来源Github、自编写）
 ```
 
 EXP
 
 ```http
 Metasploit
-脚本：Python || Java （数据来源Github、自编写）
+jar包 （数据来源Github、自编写）
+python脚本
 ```
 
-## 类似优秀项目
+## 类似项目
 
 **[VULHUB](https://vulhub.org/#/environments/)**
 
@@ -45,7 +46,6 @@ Metasploit
 
 ```http
 Fastjson
-Spring
 各种OA
 网络设备&（默认口令）
 ```
