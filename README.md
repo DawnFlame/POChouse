@@ -26,27 +26,31 @@ jar包 （数据来源Github、自编写）
 python脚本
 ```
 
+## 推荐使用方式
+
+**漏洞扫描**可直接使用 大宝剑[DBJ](https://github.com/wgpsec/DBJ)一键下任务（POC跟此仓库同步中）
+
+**漏洞利用**使用的是[qianxiao996](https://github.com/qianxiao996)师傅写的漏洞利用框架改的（EXP同步中，差不多就放出来）
+
+可直接执行命令和反弹shell
+
+![](exploits.png)
+
 ## 类似项目
 
-**[VULHUB](https://vulhub.org/#/environments/)**
+**[佩奇文库](https://github.com/PeiQi0/PeiQi-WIKI-POC)**-漏洞复现及POC文库
 
-**[佩奇文库](https://github.com/PeiQi0/PeiQi-WIKI-POC)**
+**[Middleware-Vulnerability-detection](https://github.com/mai-lang-chai/Middleware-Vulnerability-detection)**-CVE、CMS、中间件漏洞检测利用合集
 
-**[Vulmap](https://github.com/zhzyker/vulmap)**
+**[nuclei](https://github.com/projectdiscovery/nuclei-templates)**-核漏洞扫描器
 
-**[Middleware-Vulnerability-detection](https://github.com/mai-lang-chai/Middleware-Vulnerability-detection)**
-
-**[nuclei](https://github.com/projectdiscovery/nuclei-templates)**
-
-**[fscan](https://github.com/shadow1ng/fscan)**
+**[fscan](https://github.com/shadow1ng/fscan)**-内网综合扫描
 
 ## ToDo
 
-漏洞分析并优化利用方式和工具
+现在仅仅是收集整理，后续逐步深入分析利用技巧和形成原因及技术原理
 
 ```http
-Fastjson
-各种OA
 网络设备&（默认口令）
 ```
 
