@@ -1,6 +1,6 @@
 ## 快乐星球
 
-![](https://img.shields.io/badge/ReaTeam-漏洞利用-red) ![](https://img.shields.io/badge/Type-POC--EXP-orange) ![](https://img.shields.io/badge/version-2.0-brightgreen) 
+![](https://img.shields.io/badge/ReaTeam-漏洞利用-red) ![](https://img.shields.io/badge/Type-Exploit-orange) ![](https://img.shields.io/badge/version-2.0-brightgreen) 
 
 ![banner](banner.png)
 
